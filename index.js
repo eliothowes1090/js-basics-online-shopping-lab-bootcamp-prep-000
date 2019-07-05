@@ -10,25 +10,20 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  let price = Math.floor(Math.random() * 100) + 1
-  cart.push({itemName: item, itemPrice: price})
-  return `${item} has been added to your cart.`
+  let price = Math.floor(Math.random() * 100) + 1;
+  cart.push({itemName: item, itemPrice: price});
+  return `${item} has been added to your cart.`;
 }
 
 function viewCart() {
-  let printCart = []
-debugger;
-  for (let i=0; i<cart.length; i++) {
-    printCart.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
-  }
+  let printCart = [];
 
-  if (cart.length === 0) {
-    return "Your shopping cart is empty.";
-  } else if (printCart.length === 1) {
-    return `In your cart, you have ${printCart}.`;
-  } else if (printCart === 2) {
-    return `In your cart, you have ${printCart.join(" and ")}.`;
+  for (i=0; i < array.length; i++) {
+    if i == array.length - 1 {
+      printCart.push(`${array[i].itemName} at $${array[i].itemPrice}.`)
+    }
   }
+  
 }
 
 function total() {
