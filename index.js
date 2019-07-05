@@ -18,8 +18,8 @@ function addToCart(item) {
 function viewCart() {
   let printCart = [];
 
-  for (let i=0; i < array.length; i++) {
-    if (i == array.length - 1) {
+  for (let i=0; i < cart.length; i++) {
+    if (i == cart.length - 1) {
       printCart.push(`${array[i].itemName} at $${array[i].itemPrice}.`)
     }
   }
