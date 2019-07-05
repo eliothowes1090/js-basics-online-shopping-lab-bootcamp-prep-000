@@ -32,11 +32,12 @@ function viewCart() {
 }
 
 function total() {
-  var reducer = (accumulator, currentValue) => accumulator + currentValue;
-  var priceArray = Object.values(cart)
-  debugger;
-  // var total = priceArray.reduce(reducer)
-  // return total
+  let total = 0
+  
+  for (let i=0; i<cart.length; i++){
+    
+  }
+  total
 }
 
 function removeFromCart(item) {
