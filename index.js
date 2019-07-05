@@ -23,7 +23,7 @@ function viewCart() {
       printCart.push(`${array[i].itemName} at $${array[i].itemPrice}.`)
     }
   }
-  
+
 }
 
 function total() {
