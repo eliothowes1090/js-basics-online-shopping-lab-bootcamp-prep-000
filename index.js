@@ -36,6 +36,7 @@ function total() {
   var reducer = (accumulator, currentValue) => accumulator + currentValue;
   var priceArray = Object.values(cart)
   var total = priceArray.reduce(reducer)
+  total
 }
 
 function removeFromCart(item) {
