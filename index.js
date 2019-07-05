@@ -26,7 +26,7 @@ function viewCart() {
     //   printCart.push(`${cart[i].itemName} at $${cart[i].itemPrice}.`)
     // }
   }
-  return printCart
+  printCart
 }
 
 function total() {
