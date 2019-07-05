@@ -18,7 +18,7 @@ function addToCart(item) {
 function viewCart() {
   let printCart = [];
 
-  for (let i=0; i <= cart.length; i++) {
+  for (let i=0; i < cart.length; i++) {
     if (cart.length == 0) {
       printCart.push("Your shopping cart is empty.");
     } else if (i == cart.length - 1) {
