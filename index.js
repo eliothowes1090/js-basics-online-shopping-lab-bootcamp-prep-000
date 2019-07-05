@@ -43,7 +43,7 @@ function total() {
 function removeFromCart(item) {
 
   for (let i=0; i<cart.length; i++) {
-    if (cart.includes(item) > -1) {
+    if (cart[i].hasOwnProperty(item)) {
       let position = cart.indexOf(item)
       cart.splice(position, 1)
       return cart
