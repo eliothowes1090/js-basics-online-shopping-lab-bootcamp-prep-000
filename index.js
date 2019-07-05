@@ -46,11 +46,11 @@ function removeFromCart(item) {
     if (cart.includes(item) > -1) {
       let position = cart.indexOf(item)
       cart.splice(position, 1)
+      return cart
     } else {
-      return console.log("That item is not in your cart.")
+      return "That item is not in your cart.")
     }
   }
-  return console.log(cart)
 }
 
 function placeOrder(cardNumber) {
