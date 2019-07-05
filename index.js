@@ -44,7 +44,8 @@ function removeFromCart(item) {
 
   for (let i=0; i<cart.length; i++) {
     if (cart.includes(item)) {
-      cart.splice(cart.indexOf(item), 1)
+      let position = cart.indexOf(item)
+      cart.splice(, 1)
     } else {
       return "That item is not in your cart."
     }
