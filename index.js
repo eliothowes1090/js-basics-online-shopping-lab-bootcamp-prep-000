@@ -50,7 +50,7 @@ function removeFromCart(item) {
       return "That item is not in your cart."
     }
   }
-  console.log(cart)
+  return console.log(cart)
 }
 
 function placeOrder(cardNumber) {
