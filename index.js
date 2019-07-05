@@ -44,6 +44,9 @@ function removeFromCart(item) {
   for (i=0; i<cart.length; i++) {
     if (cart.include(item)) {
       cart.splice(cart.indexOf(item), 1)
+      return cart
+    } else {
+      return "That item is not in your cart."
     }
   }
 }
