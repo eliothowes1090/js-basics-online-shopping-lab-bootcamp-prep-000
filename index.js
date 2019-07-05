@@ -44,8 +44,7 @@ function removeFromCart(item) {
 
   for (let i=0; i<cart.length; i++) {
     if (cart[i].hasOwnProperty(item)) {
-      let position = cart.indexOf(item)
-      cart.splice(position, 1)
+      cart.splice(inspect, 1)
       return cart
     } else {
       return "That item is not in your cart."
