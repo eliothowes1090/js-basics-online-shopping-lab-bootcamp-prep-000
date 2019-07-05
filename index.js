@@ -20,7 +20,7 @@ function viewCart() {
 
   for (let i=0; i < cart.length; i++) {
     if (i == cart.length - 1) {
-      printCart.push(`${array[i].itemName} at $${array[i].itemPrice}.`)
+      printCart.push(`${cart[i].itemName} at $${cart[i].itemPrice}.`)
     }
   }
 
