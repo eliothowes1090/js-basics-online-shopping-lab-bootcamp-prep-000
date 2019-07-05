@@ -33,7 +33,9 @@ function viewCart() {
 
 function total() {
   var total = 0
-  Object.values(cart)
+  var reducer = (accumulator, currentValue) => accumulator + currentValue;
+  priceArray = Object.values(cart)
+  priceArray.reduce(reducer)
 }
 
 function removeFromCart(item) {
