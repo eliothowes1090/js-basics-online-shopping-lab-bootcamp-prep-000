@@ -41,14 +41,15 @@ function total() {
 }
 
 function removeFromCart(item) {
+  
   for (let i=0; i<cart.length; i++) {
     if (cart.includes(item)) {
       cart.splice(cart.indexOf(item), 1)
-      return cart
     } else {
       return "That item is not in your cart."
     }
   }
+  return cart
 }
 
 function placeOrder(cardNumber) {
