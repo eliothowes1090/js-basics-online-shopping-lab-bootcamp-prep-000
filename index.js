@@ -19,7 +19,9 @@ function viewCart() {
   let printCart = [];
 
   for (let i=0; i < cart.length; i++) {
-    if (i == cart.length - 1) {
+    if (cart.length == 0) {
+      "Your shopping cart is empty."
+    } else if (i == cart.length - 1) {
       printCart.push(`${cart[i].itemName} at $${cart[i].itemPrice}.`)
     }
   }
