@@ -17,7 +17,7 @@ function addToCart(item) {
 
 function viewCart() {
   let printCart = []
-
+debugger;
   for (let i=0; i<cart.length; i++) {
     printCart.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
   }
