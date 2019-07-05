@@ -21,7 +21,7 @@ function viewCart() {
   for (let i=0; i < cart.length; i++) {
     if (cart.length == 0) {
       printCart.push("Your shopping cart is empty.");
-    } 
+    }
     // else if (i == cart.length - 1) {
     //   printCart.push(`${cart[i].itemName} at $${cart[i].itemPrice}.`)
     // }
